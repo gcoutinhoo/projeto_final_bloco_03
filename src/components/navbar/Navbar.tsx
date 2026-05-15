@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 function Navbar() {
   return (
     <nav className="w-full absolute top-0 left-0 z-50">
@@ -5,26 +7,18 @@ function Navbar() {
       <div className="flex items-center justify-between px-10 py-5 bg-white/10 backdrop-blur-md shadow-lg border-b border-white/20">
 
         <h1 className="text-white text-3xl font-bold">
-          Farma Forte
+          <Link to="/home" className="hover:text-gray-200 cursor-pointer transition">Farma Forte</Link>
         </h1>
 
         {/* Links */}
         <ul className="flex gap-8 text-white font-medium">
-          <li className="hover:text-gray-200 cursor-pointer transition">
-            Início
-          </li>
+          <Link to="/home" className="hover:text-gray-200 cursor-pointer transition"> Início </Link>
 
-          <li className="hover:text-gray-200 cursor-pointer transition">
-            Categoria
-          </li>
+          <Link to="/categoria" className="hover:text-gray-200 cursor-pointer transition">Categorias</Link>
 
-          <li className="hover:text-gray-200 cursor-pointer transition">
-            Contato
-          </li>
+          <Link to="/cadastrar" className="hover:text-gray-200 cursor-pointer transition">Cadastrar</Link>
 
-          <li className="hover:text-gray-200 cursor-pointer transition">
-            Sobre
-          </li>
+          <Link to="/sobre" className="hover:text-gray-200 cursor-pointer transition">Sobre</Link>
         </ul>
 
       </div>
