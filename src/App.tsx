@@ -18,6 +18,7 @@ function App() {
             <Route path ='/home' element={<Home />}/>
             <Route path ='/categoria' element={<Categoria />}/>
             <Route path ='/cadastrar' element={<Cadastrar/>}/>
+            <Route path="/editarCategoria/:id" element={<Cadastrar />}/>
             <Route path ='/sobre' element={<Sobre />}/>
           </Routes>
         </div>
